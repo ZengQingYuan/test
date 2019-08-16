@@ -1,37 +1,19 @@
-# simulation-test
-
-#### 介绍
-场景模拟练习
-
-#### 软件架构
-软件架构说明
+## 场景测试
 
 
-#### 安装教程
+### 1 请求Log输出
+场景：
+* 我希望能在Log上面看到请求的访问情况，便于排查问题
 
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本仓库
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
+要求：
+* 每次请求过来，Log输出：请求路径、请求参数（**application/json** 除外）
+* 请求处理结束后，Log输出：请求路径、请求参数（**application/json** 除外）、耗时
 
 
-#### 码云特技
+### 2 请求Log跟踪
+场景：
+* 假设某个接口会被频繁访问，若某次突然出现异常的时候，我能在Log里面找到这次请求的所有上下文日志
 
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+要求：
+* 以 **/test** 接口为例，实现Log关联打印
+
