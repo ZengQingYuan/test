@@ -20,13 +20,12 @@ public class LogAspect {
     @Autowired
     private HttpServletRequest request;
 
-    
     private static final Logger logger = LoggerFactory.getLogger(LogAspect.class);
 
     @Pointcut(value = "execution(* com.simulation.controller.TestController.*(..))")
     public void	point(){
     }
-    
+
     @Around("point()")
     public Object test(ProceedingJoinPoint pjp){
         //1. 获取方法参数
