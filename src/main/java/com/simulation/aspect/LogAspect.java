@@ -40,7 +40,6 @@ public class LogAspect {
         //3获取请求路径
         String name = pjp.getSignature().getName();
 
-
         String ipAddress = request.getRemoteAddr();
         logger.info("当前访问上下文信息:正在执行的方法:"+methodName+"方法参数:"+Arrays.toString(methodArgs)+"id:"+ipAddress);
 
