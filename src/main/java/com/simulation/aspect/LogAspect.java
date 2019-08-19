@@ -26,8 +26,7 @@ public class LogAspect {
     @Pointcut(value = "execution(* com.simulation.controller.TestController.*(..))")
     public void	point(){
     }
-
-
+    
     @Around("point()")
     public Object test(ProceedingJoinPoint pjp){
         //1. 获取方法参数
